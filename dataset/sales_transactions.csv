@@ -1,0 +1,11 @@
+transaction_date,buyer_name,product,category,amount,payment_type,location
+2024-12-01,Amit Kumar,iPhone 15,Electronics,79000,UPI,Delhi
+2024-12-02,Sunita Dev,Yoga Mat,Sports,1500,Debit Card,Mumbai
+2024-12-03,Rohan Shah,Samsung S24,Electronics,68000,Credit Card,Bangalore
+2024-12-04,Neha Gupta,Slim Fit Jeans,Clothing,2400,UPI,Pune
+2024-12-05,Vijay Sharma,Instant Pot,Kitchen,8900,COD,Chennai
+2024-12-06,Kiran Rao,MacBook Air,Electronics,95000,Net Banking,Hyderabad
+2024-12-07,Priya Patel,Leather Wallet,Clothing,1200,Credit Card,Ahmedabad
+2024-12-08,Suresh Nair,Dumbbells Set,Sports,4500,UPI,Kochi
+2024-12-09,Deepa Singh,Coffee Maker,Kitchen,3200,Debit Card,Jaipur
+2024-12-10,Vikram Sen,Novel Bundle,Books,850,UPI,Kolkata

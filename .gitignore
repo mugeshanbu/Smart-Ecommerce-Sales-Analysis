@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+/node_modules
+frontend/node_modules/
+backend/node_modules/
+
+# Maven/Java builds
+target/
+**/target/
+.mvn/wrapper/maven-wrapper.jar
+!**/mvnw
+!**/mvnw.cmd
+!**/.mvn/wrapper/maven-wrapper.properties
+
+# Logs and environment files
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor/System directories
+.vscode/
+.idea/
+.gemini/
+.agents/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
