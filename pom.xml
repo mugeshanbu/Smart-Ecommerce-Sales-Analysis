@@ -15,7 +15,7 @@
     <name>bi-platform</name>
     <description>E-Commerce Sales Analysis BI Platform</description>
     <properties>
-        <java.version>21</java.version>
+      <java.version>11</java.version>
     </properties>
     <dependencies>
         <!-- Core Web Starter -->
