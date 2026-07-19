@@ -6,7 +6,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Run stage
-FROM eclipse-temurin:21-jre
+FROM eclipse-temurin:11-jre
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 ENV PORT=8080
