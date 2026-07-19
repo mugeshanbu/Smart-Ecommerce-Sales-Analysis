@@ -2,15 +2,25 @@ package com.smartshop.bi.config;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import javax.annotation.PostConstruct;
 import java.security.Key;
 import java.util.Date;
 
 @Component
 public class JwtTokenProvider {
-    private final String jwtSecret = "secure_secret_key_9876543210_smart_shop_bi_platform_enterprise";
+
+    @Value("${app.jwt.secret:secure_secret_key_9876543210_smart_shop_bi_platform_enterprise}")
+    private String jwtSecret;
+
     private final long jwtExpirationInMs = 86400000; // 24 hours
-    private final Key key = Keys.hmacShaKeyFor(jwtSecret.getBytes());
+    private Key key;
+
+    @PostConstruct
+    public void init() {
+        this.key = Keys.hmacShaKeyFor(jwtSecret.getBytes());
+    }
 
     public String generateToken(String username) {
         Date now = new Date();
